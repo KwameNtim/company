@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B4B Honesty</title>
+    <title>⚓B4B Honesty</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <a href="#" class="logo">Shipping<span>.</span></a>
-        <ul>
+        <ul class="navigation">
             <li><a href="#banner">Home</a></li>
             <li><a href="#about">About Us</a></li>
-            <li><a href="#mission">Our Mission and Vision</a></li>
             <li><a href="#staff">Our Staff</a></li>
-            <li><a href="#sevices">Our Services</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#services">Our Services</a></li>
             <li><a href="#contact">Contact Us</a></li>
         </ul>
     </header>
+
+    <!-- home-->
     <section class="banner" id="banner">
         <div class="content">
             <h2>Always Choose Good</h2>
@@ -31,5 +31,138 @@
             <a href="#" class="btn">Our Services</a>
         </div>
     </section>
+
+    <!-- about us-->
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>A</span>bout Us</h2>
+                <p>
+                    Shipping was founded in 2020 by George Mintah who wanted to 
+                    prove that people didn't need to compromise to get what they want - 
+                    that shipping and delivery can be better, quicker and more fun than 
+                    the normal way of buying. Shipping believes the faster the world
+                    stop relying on traditional purchase and moves towards a zero-emission 
+                    future, the better<br><br>
+                    To create an entire sustainable energy ecosystem, Tesla also 
+                    manufactures a unique set of energy solutions, Powerwall, Powerpack and
+                    Solar Roof, enabling homeowners, businesses, and utilities to manage 
+                    renewable energy generation, storage, and consumption. Supporting Tesla’s
+                    automotive and energy products is Gigafactory 1 – a facility designed to 
+                    significantly reduce battery cell costs. By bringing cell production in-house,
+                    Tesla manufactures batteries at the volumes required to meet production goals, 
+                    while creating thousands of jobs.
+                </p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="../image/B4b-Office.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- staff-->
+    <section class="staff" id="staff">
+        <div class="title">
+            <h2 class="titleText">Our <span>S</span>taff</h2>
+            <p> Shipping was founded in 2020 at Mallam Accra </p>
+        </div>
+            <div class="content">
+                <div class="box">
+                    <div class="imgBx">
+                         <img src="../image/avatar1.jpg" alt="" srcset="">
+                    </div>
+                    <div class="text">
+                        <h3>Ernest Mintah</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                         <img src="../image/favatar.png" alt="" srcset="">
+                    </div>
+                    <div class="text">
+                        <h3>Emmanuel Mintah</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                         <img src="../image/avatar2.jpg" alt="" srcset="">
+                    </div>
+                    <div class="text">
+                        <h3>Doris Mintah</h3>
+                    </div>
+                </div>
+                <div>
+                    <a href="#"  class="btn">View Team</a>
+                </div>
+            </div>
+    </section>
+
+    <!-- services-->
+    <section class="services" id="services">
+        <div class="title">
+            <h2 class="titleText">Our Company <span>D</span>uties</h2>
+            <p> Shipping was founded in 2020 at Mallam Accra </p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="../image/aircraft.png" alt="">
+                </div>
+                <div class="text">
+                    <h3>Air Freight</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="../image/ship.png" alt="">
+                </div>
+                <div class="text">
+                    <h3>Shipment</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="../image/track.png" alt="">
+                </div>
+                <div class="text">
+                    <h3>Tracking</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact us-->
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titleText"><span>C</span>ontact Us</h2>
+            <p>Directors annual corporate notebook. Dont even know what I am writing</p>
+        </div>
+        <div class="contactForm">
+            <h3>Send Message</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Full Name">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="Message"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Send">
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
 </body>
 </html>
